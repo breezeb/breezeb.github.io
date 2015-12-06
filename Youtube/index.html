@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>YouTube</title>
+        <meta name="viewport" content="initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <header>
+            <h1><a class="logo" href="#">Youtube</a></h1><!--class 셀렉터로 요소에 개별적으로 css적용-->
+            <form action="search.php" method="post">
+                <!--어디로 데이터를 보내라
+                get 방식은 주소에 실어서 보냄, url만 알고 있으면 해킹이 쉬움
+                    조금 더 빠르다.
+                post 방식은 보안에 좋음
+                데이터 제한양이 있음으로 효율적으로 사용해야 함-->
+                <input name="search" type="text">
+                <input type="submit">
+            </form>
+           <div>
+                <a class="sub-menu" href="upload.html">업로드</a>
+                <button type="button">알림</button>
+                <!-- 더 명시적인 형태
+                원래는 form의 요소이지만 밖에 썼을 때는 자바스크립트 용도로 사용함. 평소에는 작동하지 않음-->
+                <button class="sub-menu" type="button">조은</button>
+           </div>
+        </header>
+        <main>
+            <nav>
+                <a class="sub-menu" href="#">홈</a><!--css에서의 확장을 위해서 넣는다-->
+                <a href="#">구독하기</a>
+            </nav>
+                <div class="main-position">
+                    <section class="main-content">
+                            <h2>맞춤 동영상</h2>
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <a href="https://www.youtube.com/watch?v=npyQ0XbeNP4"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                    </section>
+                    <section class="main-content">
+                            <h2>K-pop</h2>
+                            <ul>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <a href="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"><img src="https://i.ytimg.com/vi/npyQ0XbeNP4/mqdefault.jpg"></a>
+                                        <figcaption>
+                                            <strong><a href="#">해피투게더 출연 쉐프들의 베스트 10 요리</a></strong>
+                                            <dl>
+                                                <dt>게시자</dt>
+                                                <dd><a href="#">HaveSomFun TV</a></dd>
+                                                <dt>조회수</dt>
+                                                <dd>1009,428회</dd>
+                                                <dt>업로드</dt>
+                                                <dd><time datetime="2015-09-17">2개월 전</time></dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                    </section>
+                </div>
+        </main>
+       <div class="aside-box">
+            <aside>
+                <section>
+                    <h2>마이메뉴</h2>
+                    <ul>
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">내 채널</a></li>
+                        <li>
+                            <a href="#">
+                                인기 급상승 동영상
+                                <dl>
+                                    <dt>아직 확인하지 않은 동영상 갯수</dt>
+                                    <dd>97</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li><a href="#">구독정보</a></li>
+                        <li><a href="#">최근 본 동영상</a></li>
+                        <li>
+                            <a href="#">
+                                나중에 볼 동영상
+                                <dl>
+                                    <dt>아직 확인하지 않은 동영상 갯수</dt>
+                                    <dd>27</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+       </div>
+        <footer>
+            <h4>
+                <a href="https://www.youtube.com/yt/about/ko/">정보</a>
+                <a href="https://www.youtube.com/yt/press/ko/">보도자료</a>
+                <a href="https://www.youtube.com/yt/copyright/ko/">저작권</a>
+                <a href="https://www.youtube.com/yt/creators/ko/">제작자</a>
+                <a href="https://www.youtube.com/yt/advertise/ko/">광고</a>
+                <a href="https://www.youtube.com/yt/dev/ko/">개발자</a>
+            </h4>
+            <h5>
+                <a href="https://www.youtube.com/yt/about/ko/">이용약관</a>
+                <a href="https://www.youtube.com/yt/press/ko/">개인정보 보호</a>
+                <a href="https://www.youtube.com/yt/copyright/ko/">정책 및 안전</a>
+                <a href="https://www.youtube.com/yt/creators/ko/">의견 보내기</a>
+                <a href="https://www.youtube.com/yt/advertise/ko/">새로운 기능</a>
+                <a href="https://www.youtube.com/yt/dev/ko/">2015 YouTube,LLC</a>
+            </h5>
+        </footer>
+        <!--헤더 사이드바는 고정-->
+    </body>
+</html>
