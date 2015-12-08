@@ -9,22 +9,29 @@
     </head>
     <body>
        <header>
-            <h1><a class="logo" href="#">Youtube</a></h1><!--class 셀렉터로 요소에 개별적으로 css적용-->
-            <form action="search.php" method="post">
+           <div class="logo-and-menu">
+               <form>
+                   <button type="button" id="menu">
+                       <img src="menu.jpg">
+                   </button>
+               </form>
+                <a class="logo" href="#" id="logo"><img src="youtubelogo.jpg"></a><!--class 셀렉터로 요소에 개별적으로 css적용-->
+           </div>
+            <form action="search.php" method="post" class="search-control test">
                 <!--어디로 데이터를 보내라
                 get 방식은 주소에 실어서 보냄, url만 알고 있으면 해킹이 쉬움
                     조금 더 빠르다.
                 post 방식은 보안에 좋음
                 데이터 제한양이 있음으로 효율적으로 사용해야 함-->
-                <input name="search" type="text">
+                <input name="search" type="text" class="search-bar-control test-div">
                 <input type="submit">
             </form>
-           <div>
+           <div class="sub-menu-control">
                 <a class="sub-menu" href="upload.html">업로드</a>
                 <button type="button">알림</button>
                 <!-- 더 명시적인 형태
                 원래는 form의 요소이지만 밖에 썼을 때는 자바스크립트 용도로 사용함. 평소에는 작동하지 않음-->
-                <button class="sub-menu" type="button">조은</button>
+                <button class="sub-menu" type="button">권형철</button>
            </div>
         </header>
         <main>
