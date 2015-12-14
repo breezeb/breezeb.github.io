@@ -162,18 +162,6 @@ button {
     vertical-align: middle;
 }
 
-/*
-.search-form-wrapper {
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    background: transparent;
-    display: flex;
-}
-*/
-
 .search-form-control {
     overflow: hidden;
     margin-top: 3px;
