@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM 연습2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <button type="button">버튼</button>
+        </header>
+        <main>
+            <aside class="off"></aside>
+        </main>
+    <script>
+        var btn = document.querySelector("body header button");
+        console.log(btn.nodeName);
+        btn.addEventListener("click", function(e){
+            var aside = document.querySelector("body main aside");
+            aside.className = "off on";
+            console.log(aside.hasAttribute("class"));
+        })
+    </script>
+    </body>
+</html>

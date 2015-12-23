@@ -1,0 +1,44 @@
+.btn {
+  display : block;
+}
+
+.menu {
+    display: block;
+    width: 60px;
+    height: 30px;
+    background: red;
+}
+
+aside.off {
+    position          : fixed;
+    left              : -100%;
+    top               : 30px;
+    bottom            : 0;
+    width             : 150px;
+    background        : rgba(0,0,0,0.5);
+}
+aside.on {
+    left              : 0;
+    -webkit-animation : 1s moveAnimation;
+    animation         : 1s moveAnimation;
+}
+/* Animation */
+@-webkit-keyframes moveAnimation {
+    /* 3초동안 움직이는 애니메이션 */
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes moveAnimation {
+    /* 3초동안 움직이는 애니메이션 */
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 0;
+    }
+}
+

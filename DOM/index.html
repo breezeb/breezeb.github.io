@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM 예제</title>
+        <meta name="author" content="kwon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <button class="btn" type="button">hitme</button>
+        <div></div>
+    </body>
+    <script>
+        var button = document.querySelector("body button");
+        console.log(button.innerHTML);
+        var div = document.querySelector("body div");
+        button.addEventListener("click",function(e){
+            if(div.hasAttribute("class")){
+                div.removeAttribute("class", "menu");
+            } else {
+                div.setAttribute("class", "menu");
+            }
+        });
+        var focused = document.activeElement;
+        window.addEventListener("click",function(e){
+            if(!focused || focused == document.body){
+                div.removeAttribute("class", "menu");
+                console.log("작동안됨");
+            }else{
+                return 0;
+            }
+        });
+    </script>
+</html>
